@@ -1,6 +1,6 @@
 Masoumeh Khaleghian - AI Engineer & NLP Developer
 
-Welcome to my GitHub CV! This repository highlights my technical skills, experience, and contributions in Artificial Intelligence, Machine Learning, and Natural Language Processing.
+Welcome to my GitHub CV! This repository highlights my technical skills, experience and contributions in Artificial Intelligence, Machine Learning, and Natural Language Processing.
 
 Feel free to reach out if you’re interested in collaborating or learning more about my work:
 
