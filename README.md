@@ -4,7 +4,7 @@ Welcome to my GitHub CV! This repository highlights my technical skills, experie
 
 Feel free to reach out if you’re interested in collaborating or learning more about my work:
 
-Email: masi.khaleghi77@gmail.com
+Email: masoumehkhaleghian.ai@gmail.com
 
 LinkedIn: https://www.linkedin.com/in/masoumehkhaleghian-52710718
 
