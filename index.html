@@ -32,6 +32,7 @@
 				    <ul>
 				        <li class="active"><a href="#about">About</a></li>
 				        <li><a href="#experiences">Experiences</a></li>
+						<li><a href="#projects">Projects</a></li>
 				        <li><a href="#achievements">Achievements</a></li>
 				        <li><a href="#skills">Skills</a></li>
 				    </ul>
@@ -88,6 +89,226 @@
 		</div>
 	</div>
 
+	<!-- Projects -->
+	<div class="work section second" id="projects">
+	    <div class="container">
+	        <h1>Selected<br>Projects</h1>	
+	        <ul class="work-list">
+	            <li>Natural Language Processing / Information Retrieval</li>
+	            <li>
+	                <strong>Persian Semantic Search & Retrieval Engine for BI Reports</strong>
+	            </li>
+	            <li>
+	                <strong>NLP / AI Engineer</strong>
+	            </li>
+	            <li>
+	                Designed and developed a fully offline Persian semantic search
+	                engine for retrieving relevant BI reports from natural-language
+	                queries.
+	            </li>
+	            <li>
+	                Built a Persian NLP preprocessing pipeline with normalization,
+	                typo correction, domain-specific vocabulary, and fuzzy spell
+	                correction.
+	            </li>
+	            <li>
+	                Implemented a two-stage retrieval architecture using
+	                BGE-M3 + FAISS for dense retrieval and a GTE Cross-Encoder
+	                for intent-aware reranking.
+	            </li>
+	            <li>
+	                Designed hybrid relevance scoring and confidence estimation,
+	                and deployed the complete search pipeline as a REST API
+	                using FastAPI.
+	            </li>
+	            <li>
+	                <strong>Technologies:</strong>
+	                Python · NLP · BGE-M3 · Sentence Transformers · FAISS ·
+	                GTE Cross-Encoder · FastAPI · RapidFuzz · Parsivar
+	            </li>
+	        </ul>
+			<ul class="work-list">
+			    <li>Natural Language Processing / Retrieval-Augmented Generation</li>
+			
+			    <li>
+			        <strong>Personalized Enterprise Knowledge Assistant with Hybrid RAG</strong>
+			    </li>
+			
+			    <li>
+			        <strong>NLP / AI Engineer</strong>
+			    </li>
+			
+			    <li>
+			        Architected and developed a personalized enterprise knowledge assistant
+			        for question answering over internal organizational documents and
+			        structured user data using an advanced multi-stage Hybrid RAG pipeline.
+			    </li>
+			
+			    <li>
+			        Engineered multi-representation retrieval with BGE-M3, combining Dense
+			        semantic search using FAISS-HNSW and Sparse lexical retrieval, followed
+			        by RRF / weighted fusion to maximize retrieval recall.
+			    </li>
+			
+			    <li>
+			        Designed a multi-stage ranking pipeline using ColBERT late-interaction
+			        reranking for document-level relevance, BM25L-based sentence/span
+			        extraction, and BGE Cross-Encoder reranking (BAAI/bge-reranker-v2-m3)
+			        to select the most relevant evidence for the final LLM context.
+			    </li>
+			
+			    <li>
+			        Developed conversation-aware query understanding using session history,
+			        including query dependency classification, contextual query rewriting,
+			        ambiguity detection, and automatic clarification for underspecified
+			        user questions.
+			    </li>
+			
+			    <li>
+			        Implemented context compression and evidence selection to avoid sending
+			        entire retrieved documents to the LLM, producing compact, relevance-ranked
+			        context from the highest-quality spans.
+			    </li>
+			
+			    <li>
+			        Designed personalized and access-aware response generation by integrating
+			        user profiles, organizational roles, session context, and authorized
+			        internal knowledge while restricting unsupported or unauthorized
+			        information in generated responses.
+			    </li>
+			
+			    <li>
+			        Built the complete backend as a modular FastAPI service with
+			        authentication, guest access, session management, persistent conversation
+			        history, retrieval, multi-stage reranking, context construction, and
+			        structured JSON responses.
+			    </li>
+			
+			    <li>
+			        <strong>Technologies:</strong>
+			        Python · NLP · Hybrid RAG · BGE-M3 · Dense Retrieval · Sparse Retrieval ·
+			        FAISS-HNSW · RRF · ColBERT · BM25L · BGE Cross-Encoder ·
+			        Sentence Transformers · LLMs · FastAPI · Information Retrieval
+			    </li>
+			</ul>
+			<ul class="work-list">
+			    <li>AI for Software Engineering / Code Intelligence / Retrieval-Augmented Generation</li>
+			    <li>
+			        <strong>CodeRAG – Repository-Aware AI Programming Assistant</strong>
+			    </li>
+			    <li>
+			        <strong>NLP / AI Engineer</strong>
+			    </li>
+			    <li>
+			        Architected and developed a repository-aware AI programming assistant
+			        capable of analyzing software projects and answering contextual
+			        questions about the codebase, including code explanation, debugging,
+			        fixes, and implementation suggestions.
+			    </li>
+			    <li>
+			        Built a structure-aware code ingestion and chunking pipeline using
+			        AST / Tree-sitter, preserving meaningful code boundaries for
+			        retrieval instead of relying on naive fixed-size text chunking.
+			    </li>
+			    <li>
+			        Designed an incremental indexing pipeline with persistent state and
+			        per-file chunk caching, automatically detecting modified files and
+			        skipping unchanged source files during re-indexing.
+			    </li>
+			    <li>
+			        Engineered a multi-channel code retrieval architecture combining
+			        BM25 lexical search, multilingual BGE-M3 semantic embeddings, and
+			        Voyage Code code-aware embeddings through independent vector indexes.
+			    </li>
+			    <li>
+			        Implemented Reciprocal Rank Fusion (RRF) to combine heterogeneous
+			        retrieval results and improve candidate recall across lexical,
+			        semantic, and code-specialized retrieval channels.
+			    </li>
+			    <li>
+			        Developed a Cross-Encoder reranking stage using
+			        BAAI/bge-reranker-v2-m3 to jointly evaluate user queries against
+			        retrieved code chunks and select the most contextually relevant
+			        source-code segments.
+			    </li>
+			    <li>
+			        Built a context-controlled generation pipeline that provides only
+			        the highest-ranked repository code chunks to the LLM, enabling
+			        project-aware code explanation, debugging, fixes, and development
+			        suggestions.
+			    </li>
+			    <li>
+			        Designed the system to support both Persian and English developer
+			        queries and implemented a unified LLM gateway supporting multiple
+			        language-model backends.
+			    </li>
+			    <li>
+			        Exposed the CodeRAG engine through a FastAPI backend and developed
+			        a web-based interface with HTTPS support for secure access within
+			        the development environment.
+			    </li>
+			    <li>
+			        <strong>Technologies:</strong>
+			        Python · CodeRAG · AST · Tree-sitter · BGE-M3 · Voyage Code ·
+			        BM25 · RRF · BGE Cross-Encoder · FAISS / Vector Search ·
+			        LLMs · FastAPI · Caddy · Information Retrieval ·
+			        Retrieval-Augmented Generation
+			    </li>
+			</ul>
+			<ul class="work-list">
+			    <li>Natural Language Processing / HR Analytics / LLM Orchestration</li>
+			    <li>
+			        <strong>Performance Evaluation Chatbot – Conversational HR Analytics</strong>
+			    </li>
+			    <li>
+			        <strong>NLP / AI Engineer</strong>
+			    </li>
+			    <li>
+			        Developed a Persian conversational assistant for HR analytics and
+			        performance evaluation support, providing access to employee data,
+			        organizational relationships, and internal knowledge through a
+			        FastAPI backend and Streamlit interface.
+			    </li>
+			    <li>
+			        Built a schema-aware semantic analysis pipeline combining rule-based
+			        processing and local language models to extract entities, filters,
+			        aggregations, and user intent from natural-language questions.
+				</li>
+			    <li>
+			        Designed a multi-tool orchestration architecture with typed execution
+			        plans, dependency validation, and runtime data binding to coordinate
+			        SQL analytics, graph queries, and organizational document retrieval.
+			    </li>
+			    <li>
+			        Implemented controlled natural-language-to-SQL workflows using
+			        parameterized SQLAlchemy queries, schema validation, SQLGlot-validated
+			        LLM fallbacks, and read-only SQLite execution with resource limits.
+			    </li>
+			    <li>
+			        Developed employee relationship analysis using NetworkX, including
+			        entity linking, relationship queries, and bounded graph traversal
+			        across education, training, skills, and role interests.
+			    </li>
+			    <li>
+			        Enabled multi-step analytical workflows by passing SQL-filtered
+			        employee identifiers directly into graph queries, combining
+			        structured filtering with relationship-based evidence.
+			    </li>
+			    <li>
+			        Implemented sensitive-field access policies, ambiguity handling,
+			        and contract and integration tests covering tool dependencies,
+			        SQL-to-graph data binding, and failure handling.
+			    </li>
+			    <li>
+			        <strong>Technologies:</strong>
+			        Python · FastAPI · Streamlit · Pydantic · Ollama · Qwen2.5 ·
+			        SQLAlchemy · SQLite · SQLGlot · NetworkX · Hybrid RAG ·
+			        BGE-M3 · FAISS
+			    </li>
+			</ul>
+	    </div>
+	</div>
+	
 	<!-- Education & Achievements -->
 	<div class="award section second" id="achievements">
 		<div class="container">
@@ -135,45 +356,107 @@
 
 	<!-- Technical Skills -->
 	<div class="skills section second" id="skills">
-		<div class="container">
-			<h1>Technical<br>Skills</h1>
-			<ul class="skill-list list-flat">
-				<li>AI &amp; Machine Learning Frameworks</li>
-				<li>TensorFlow / Keras / PyTorch / Scikit-learn</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Data Manipulation &amp; Analysis</li>
-				<li>NumPy / Pandas</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Containerization &amp; Deployment</li>
-				<li>Docker / Git</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Cloud &amp; AI Platforms</li>
-				<li>Azure / Google Cloud / OpenAI / Llama / GPT Models</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Machine Learning &amp; Deep Learning</li>
-				<li>Model Development / Neural Networks / Model Optimization / Data Preprocessing</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Natural Language Processing</li>
-				<li>Text Preprocessing / Tokenization / Word Embeddings / Sequence Modeling / NLP Model Optimization</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Prompt Engineering</li>
-				<li>Designing Prompts for Large Language Models / Optimizing Prompt Engineering Processes</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Retrieval-Augmented Generation</li>
-				<li>Experience with RAG Techniques for Enhanced Information Retrieval</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Development Methodologies</li>
-				<li>Agile Development / Team Collaboration</li>
-			</ul>
-		</div>
+	    <div class="container">
+	        <h1>Technical<br>Skills</h1>
+	
+	        <ul class="skill-list list-flat">
+	            <li>Programming & Backend Development</li>
+	            <li>
+	                Python / FastAPI / REST APIs / Pydantic /
+	                SQLAlchemy / SQLite / SQLGlot
+	            </li>
+	        </ul>
+	
+	        <ul class="skill-list list-flat">
+	            <li>Natural Language Processing & LLMs</li>
+	            <li>
+	                NLP / Large Language Models (LLMs) /
+	                Sentence Transformers / Text Embeddings /
+	                Query Understanding / Query Rewriting /
+	                Prompt Engineering / Context Engineering
+	            </li>
+	        </ul>
+	
+	        <ul class="skill-list list-flat">
+	            <li>Retrieval-Augmented Generation & Information Retrieval</li>
+	            <li>
+	                RAG / Hybrid RAG / Dense Retrieval / Sparse Retrieval /
+	                Multi-Stage Retrieval / Context Retrieval /
+	                Evidence Selection
+	            </li>
+	        </ul>
+	
+	        <ul class="skill-list list-flat">
+	            <li>Embedding, Retrieval & Reranking</li>
+	            <li>
+	                BGE-M3 / FAISS / FAISS-HNSW / BM25 / BM25L /
+	                Reciprocal Rank Fusion (RRF) / ColBERT /
+	                Cross-Encoder Reranking / Voyage Code
+	            </li>
+	        </ul>
+	
+	        <ul class="skill-list list-flat">
+	            <li>LLM Systems & AI Orchestration</li>
+	            <li>
+	                Multi-Tool Orchestration / Semantic Routing /
+	                Structured Planning / Plan Validation /
+	                Dependency-Aware Execution / Runtime Data Binding /
+	                Structured LLM Outputs
+	            </li>
+	        </ul>
+	
+	        <ul class="skill-list list-flat">
+	            <li>Knowledge Graphs & Structured Data Analytics</li>
+	            <li>
+	                NetworkX / Graph Traversal / Entity Linking /
+	                Graph-Based Evidence Retrieval / Natural Language to SQL /
+	                Schema-Grounded Analytics
+	            </li>
+	        </ul>
+	
+	        <ul class="skill-list list-flat">
+	            <li>Code Intelligence</li>
+	            <li>
+	                CodeRAG / AST / Tree-sitter /
+	                Structure-Aware Code Chunking /
+	                Repository-Aware Retrieval / Incremental Indexing
+	            </li>
+	        </ul>
+	
+	        <ul class="skill-list list-flat">
+	            <li>Machine Learning & Deep Learning</li>
+	            <li>
+	                PyTorch / TensorFlow / Keras / Scikit-learn /
+	                Ensemble Learning / Neural Networks /
+	                Model Training & Optimization
+	            </li>
+	        </ul>
+	
+	        <ul class="skill-list list-flat">
+	            <li>Data Processing & Analysis</li>
+	            <li>
+	                Pandas / NumPy / SciPy /
+	                Data Preprocessing / Feature Engineering
+	            </li>
+	        </ul>
+	
+	        <ul class="skill-list list-flat">
+	            <li>LLM Platforms & Models</li>
+	            <li>
+	                Ollama / OpenAI / GPT Models / Llama /
+	                Qwen / Hugging Face / Sentence Transformers
+	            </li>
+	        </ul>
+	
+	        <ul class="skill-list list-flat">
+	            <li>Deployment & Development Tools</li>
+	            <li>
+	                Docker / Git / Caddy / Streamlit /
+	                REST API Development / HTTPS
+	            </li>
+	        </ul>
+	
+	    </div>
 	</div>
 
 	<!-- Quote -->
