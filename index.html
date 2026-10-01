@@ -47,15 +47,28 @@
 	<div class="intro section" id="about">
 		<div class="container">
 			<p>Hi, I’m Masoumeh Khaleghian</p>
+	
 			<div class="units-row units-split wrap">
 				<div class="unit-20">
-					<img src="img/ava.jpg" alt="Avatar">
+					<img src="img/ava.jpg" alt="Masoumeh Khaleghian">
 				</div>
+	
 				<div class="unit-80">
-					<h1>I Work as AI Engineer<br><span id="typed"></span></h1>
+					<h1>
+						AI Engineer<br>
+						<span id="typed"></span>
+					</h1>
 				</div>
+	
 				<p>
-					I am a data scientist with a Master’s degree, primarily focused on Natural Language Processing (NLP), though my experience extends beyond this field. Throughout my academic and professional career, I have worked on a variety of AI projects, applying diverse techniques and algorithms across multiple domains. 
+					AI Engineer specializing in Natural Language Processing,
+					Large Language Models, Retrieval-Augmented Generation, and
+					Deep Learning. I design and build end-to-end AI systems,
+					from data processing, model training, and semantic retrieval
+					to LLM orchestration, multimodal AI, and production-ready
+					inference APIs. My work spans enterprise knowledge systems,
+					intelligent search, conversational AI, recommender systems,
+					and applied AI research.
 				</p>
 			</div>
 		</div>
@@ -995,7 +1008,13 @@
     <script src="js/site.js"></script>
     <script>
 		function newTyped(){}$(function(){$("#typed").typed({
-		strings: ["Natural Language Processing", "Question Answering", "Machine Learning", "Deep Learning", "Neural Network"],
+		strings: strings: [
+			"Natural Language Processing",
+			"Large Language Models",
+			"Retrieval-Augmented Generation",
+			"AI Systems",
+			"Multimodal AI"
+		],
 
 		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
     </script>
