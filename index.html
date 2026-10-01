@@ -8,7 +8,8 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="google-site-verification" content="LLG92XdQKi7WYMCef_qJxd7PuhhwtKpzI4XmTG-fmTI" />
-    <meta name="theme-color" content="#0c0a12" />
+    <meta name="theme-color" content="#0e0d12" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ece9f2" media="(prefers-color-scheme: light)" />
     <link rel="stylesheet" href="css/kube.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/custom.min.css" />
@@ -28,7 +29,7 @@
 		<div class="container">
 			<header class="group top-nav">
 				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
-				    <span class="logo">Masoumeh Khaleghian</span>
+				    <span class="logo" role="button" tabindex="0" aria-label="Toggle navigation" aria-controls="navbar-1" aria-expanded="false">Masoumeh Khaleghian</span>
 				</div>
 			    <nav id="navbar-1" class="navbar item-nav">
 				    <ul>
@@ -1005,7 +1006,7 @@
     <script src="js/site.js"></script>
     <script>
 		function newTyped(){}$(function(){$("#typed").typed({
-		strings: strings: [
+		strings: [
 			"Natural Language Processing",
 			"Large Language Models",
 			"Retrieval-Augmented Generation",

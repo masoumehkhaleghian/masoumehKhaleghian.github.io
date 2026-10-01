@@ -1,0 +1,74 @@
+// Theme tokens (CSS custom properties)
+// Dark by default, light via prefers-color-scheme
+
+:root {
+	color-scheme: dark;
+
+	--bg: #0e0d12;
+	--bg-2: #14121a;
+	--heading: #f2f1f5;
+	--text: #c6c3cf;
+	--text-soft: #b5b2bf;
+	--text-muted: #8f8b9c;
+	--accent: #b1a9c7;
+	--accent-strong: #c0b8d0;
+	--accent-hover: #ddd9e8;
+	--grad-a: #9a90b8;
+	--grad-b: #524c66;
+	--glow: rgba(140, 130, 180, 0.35);
+	--glass: rgba(255, 255, 255, 0.05);
+	--glass-sheen: rgba(255, 255, 255, 0.14);
+	--tech-bg: rgba(255, 255, 255, 0.05);
+	--border: rgba(255, 255, 255, 0.10);
+	--border-strong: rgba(255, 255, 255, 0.20);
+	--hover-border: rgba(170, 160, 200, 0.40);
+	--nav-bg: rgba(16, 15, 20, 0.60);
+	--nav-panel: rgba(20, 18, 26, 0.88);
+	--shadow: rgba(0, 0, 0, 0.42);
+	--shadow-strong: rgba(0, 0, 0, 0.55);
+	--blob-a: rgba(132, 124, 168, 0.42);
+	--blob-b: rgba(104, 98, 138, 0.42);
+	--halo-1: rgba(130, 120, 170, 0.14);
+	--halo-2: rgba(100, 92, 140, 0.16);
+	--halo-3: rgba(90, 84, 120, 0.14);
+	--selection: rgba(140, 130, 180, 0.35);
+	--scroll-a: #5a5470;
+	--scroll-b: #35313f;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color-scheme: light;
+
+		--bg: #ece9f2;
+		--bg-2: #f6f4fa;
+		--heading: #26212f;
+		--text: #4b4658;
+		--text-soft: #57516a;
+		--text-muted: #7a7490;
+		--accent: #665c88;
+		--accent-strong: #584f78;
+		--accent-hover: #3f3960;
+		--grad-a: #8a80b0;
+		--grad-b: #514b6b;
+		--glow: rgba(110, 100, 150, 0.25);
+		--glass: rgba(255, 255, 255, 0.55);
+		--glass-sheen: rgba(255, 255, 255, 0.85);
+		--tech-bg: rgba(124, 108, 170, 0.10);
+		--border: rgba(40, 34, 60, 0.10);
+		--border-strong: rgba(40, 34, 60, 0.16);
+		--hover-border: rgba(90, 80, 130, 0.35);
+		--nav-bg: rgba(252, 251, 255, 0.72);
+		--nav-panel: rgba(255, 255, 255, 0.94);
+		--shadow: rgba(70, 64, 100, 0.14);
+		--shadow-strong: rgba(70, 64, 100, 0.22);
+		--blob-a: rgba(150, 140, 190, 0.38);
+		--blob-b: rgba(120, 110, 160, 0.30);
+		--halo-1: rgba(150, 140, 190, 0.18);
+		--halo-2: rgba(120, 110, 160, 0.18);
+		--halo-3: rgba(110, 100, 150, 0.16);
+		--selection: rgba(120, 105, 165, 0.25);
+		--scroll-a: #b3abc8;
+		--scroll-b: #8f87a8;
+	}
+}
