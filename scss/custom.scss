@@ -95,6 +95,277 @@
 	}
 }
 
+// Projects
+#projects {
+	.work-list {
+		margin-left: 0px;
+		margin-bottom: 34px;
+		padding: 26px 28px 22px 28px;
+		background: #fbfbfc;
+		border: 1px solid #ececec;
+		border-left: 4px solid #728aac;
+		border-radius: 6px;
+
+		&:last-child {
+			margin-bottom: 0px;
+		}
+
+		li {
+			list-style: none;
+			font-size: em(15);
+			line-height: 1.75em;
+			color: $secondary;
+			margin-bottom: 9px;
+		}
+
+		// Category label
+		li:first-child {
+			text-transform: uppercase;
+			letter-spacing: 0.09em;
+			font-size: em(12);
+			font-weight: 700;
+			color: #98a6b8;
+			margin-bottom: 6px;
+		}
+
+		// Project title
+		li:nth-child(2) {
+			font-size: em(23);
+			line-height: 1.3em;
+			color: $primary;
+			margin-bottom: 4px;
+		}
+
+		// Role
+		li:nth-child(3) {
+			font-size: em(14);
+			font-weight: 700;
+			color: #728aac;
+			margin-bottom: 14px;
+		}
+
+		// Description bullet points
+		li:nth-child(n+4):not(:last-child) {
+			position: relative;
+			padding-left: 18px;
+
+			&:before {
+				position: absolute;
+				content: '';
+				left: 2px;
+				top: 12px;
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				background: #c3ccd8;
+			}
+		}
+
+		// Technologies
+		li:last-child {
+			margin-top: 16px;
+			margin-bottom: 0px;
+			padding: 12px 16px;
+			background: #eff3f7;
+			border-radius: 4px;
+			font-size: em(14);
+
+			strong {
+				color: $primary;
+			}
+		}
+	}
+}
+
+// About
+#about {
+	.container > p:first-child {
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		font-size: em(13);
+		font-weight: 700;
+		color: #98a6b8;
+		margin-bottom: 6px;
+	}
+
+	.wrap > p {
+		margin-top: 22px;
+		font-size: em(16);
+		line-height: 1.9em;
+		color: $secondary;
+	}
+}
+
+// Experiences
+#experiences {
+	.work-list {
+		margin-left: 0px;
+		margin-bottom: 30px;
+		padding: 24px 28px 20px 28px;
+		background: #fbfbfc;
+		border: 1px solid #ececec;
+		border-left: 4px solid #728aac;
+		border-radius: 6px;
+
+		&:last-child {
+			margin-bottom: 0px;
+		}
+
+		li {
+			list-style: none;
+			font-size: em(15);
+			line-height: 1.75em;
+			color: $secondary;
+			margin-bottom: 6px;
+		}
+
+		// Date
+		li:first-child {
+			text-transform: uppercase;
+			letter-spacing: 0.09em;
+			font-size: em(12);
+			font-weight: 700;
+			color: #98a6b8;
+			margin-bottom: 8px;
+		}
+
+		// Company / title
+		li:nth-child(2) {
+			margin-bottom: 4px;
+
+			a {
+				font-size: em(20);
+				font-weight: 700;
+				line-height: 1.35em;
+				color: $primary;
+				text-decoration: none;
+				border-bottom: none;
+				padding-bottom: 0;
+
+				&:hover {
+					color: #728aac !important;
+					border-bottom: none;
+				}
+			}
+		}
+
+		// Role
+		li:nth-child(3) {
+			font-size: em(14);
+			font-weight: 700;
+			color: #728aac;
+			margin-bottom: 12px;
+		}
+
+		// Description
+		li:last-child {
+			margin-bottom: 0px;
+			padding-top: 12px;
+			border-top: 1px dashed #e2e6ea;
+		}
+	}
+}
+
+// Education & Achievements
+#achievements {
+	.award-list {
+		margin-left: 0px;
+		margin-bottom: 24px;
+		padding: 22px 26px 18px 26px;
+		background: #fbfbfc;
+		border: 1px solid #ececec;
+		border-left: 4px solid #728aac;
+		border-radius: 6px;
+
+		&:last-child {
+			margin-bottom: 0px;
+		}
+
+		li {
+			list-style: none;
+			font-size: em(15);
+			line-height: 1.7em;
+			color: $secondary;
+			margin-bottom: 6px;
+		}
+
+		// Date
+		li:first-child {
+			text-transform: uppercase;
+			letter-spacing: 0.09em;
+			font-size: em(12);
+			font-weight: 700;
+			color: #98a6b8;
+			margin-bottom: 8px;
+		}
+
+		// Title
+		li:nth-child(2) {
+			font-size: em(18);
+			font-weight: 700;
+			line-height: 1.4em;
+			color: $primary;
+		}
+
+		// Authors / institute
+		li:nth-child(3) {
+			font-size: em(14);
+			color: lighten($secondary, 15%);
+			margin-bottom: 10px;
+		}
+
+		// Link
+		li:last-child {
+			margin-bottom: 0px;
+
+			a {
+				font-size: em(14);
+				font-weight: 700;
+				color: #728aac;
+				text-decoration: none;
+				border-bottom: none;
+
+				&:hover {
+					color: $primary !important;
+				}
+			}
+		}
+	}
+}
+
+// Skills
+#skills {
+	.skill-list {
+		margin-left: 0px;
+		margin-bottom: 0px;
+		padding: 16px 0px;
+		border-bottom: 1px solid #ececec;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		li {
+			list-style: none;
+		}
+
+		// Category
+		li:first-child {
+			font-size: em(15);
+			font-weight: 700;
+			color: $primary;
+			margin-bottom: 4px;
+		}
+
+		// Skills
+		li:last-child {
+			font-size: em(14);
+			line-height: 1.8em;
+			color: $secondary;
+		}
+	}
+}
+
 .award {
 	.award-list {
 		margin-left: 0px;

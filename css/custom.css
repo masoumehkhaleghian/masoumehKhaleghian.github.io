@@ -126,6 +126,182 @@ a:hover {
       .work .work-list li a:hover {
         border-bottom: 1px solid #333333; }
 
+#projects .work-list {
+  margin-left: 0px;
+  margin-bottom: 34px;
+  padding: 26px 28px 22px 28px;
+  background: #fbfbfc;
+  border: 1px solid #ececec;
+  border-left: 4px solid #728aac;
+  border-radius: 6px; }
+  #projects .work-list:last-child {
+    margin-bottom: 0px; }
+  #projects .work-list li {
+    list-style: none;
+    font-size: 0.9375em;
+    line-height: 1.75em;
+    color: #4e4e4e;
+    margin-bottom: 9px; }
+  #projects .work-list li:first-child {
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-size: 0.75em;
+    font-weight: 700;
+    color: #98a6b8;
+    margin-bottom: 6px; }
+  #projects .work-list li:nth-child(2) {
+    font-size: 1.4375em;
+    line-height: 1.3em;
+    color: #333333;
+    margin-bottom: 4px; }
+  #projects .work-list li:nth-child(3) {
+    font-size: 0.875em;
+    font-weight: 700;
+    color: #728aac;
+    margin-bottom: 14px; }
+  #projects .work-list li:nth-child(n+4):not(:last-child) {
+    position: relative;
+    padding-left: 18px; }
+    #projects .work-list li:nth-child(n+4):not(:last-child):before {
+      position: absolute;
+      content: '';
+      left: 2px;
+      top: 12px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #c3ccd8; }
+  #projects .work-list li:last-child {
+    margin-top: 16px;
+    margin-bottom: 0px;
+    padding: 12px 16px;
+    background: #eff3f7;
+    border-radius: 4px;
+    font-size: 0.875em; }
+    #projects .work-list li:last-child strong {
+      color: #333333; }
+
+#about .container > p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8125em;
+  font-weight: 700;
+  color: #98a6b8;
+  margin-bottom: 6px; }
+#about .wrap > p {
+  margin-top: 22px;
+  font-size: 1em;
+  line-height: 1.9em;
+  color: #4e4e4e; }
+
+#experiences .work-list {
+  margin-left: 0px;
+  margin-bottom: 30px;
+  padding: 24px 28px 20px 28px;
+  background: #fbfbfc;
+  border: 1px solid #ececec;
+  border-left: 4px solid #728aac;
+  border-radius: 6px; }
+  #experiences .work-list:last-child {
+    margin-bottom: 0px; }
+  #experiences .work-list li {
+    list-style: none;
+    font-size: 0.9375em;
+    line-height: 1.75em;
+    color: #4e4e4e;
+    margin-bottom: 6px; }
+  #experiences .work-list li:first-child {
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-size: 0.75em;
+    font-weight: 700;
+    color: #98a6b8;
+    margin-bottom: 8px; }
+  #experiences .work-list li:nth-child(2) {
+    margin-bottom: 4px; }
+    #experiences .work-list li:nth-child(2) a {
+      font-size: 1.25em;
+      font-weight: 700;
+      line-height: 1.35em;
+      color: #333333;
+      text-decoration: none;
+      border-bottom: none;
+      padding-bottom: 0; }
+      #experiences .work-list li:nth-child(2) a:hover {
+        color: #728aac !important;
+        border-bottom: none; }
+  #experiences .work-list li:nth-child(3) {
+    font-size: 0.875em;
+    font-weight: 700;
+    color: #728aac;
+    margin-bottom: 12px; }
+  #experiences .work-list li:last-child {
+    margin-bottom: 0px;
+    padding-top: 12px;
+    border-top: 1px dashed #e2e6ea; }
+
+#achievements .award-list {
+  margin-left: 0px;
+  margin-bottom: 24px;
+  padding: 22px 26px 18px 26px;
+  background: #fbfbfc;
+  border: 1px solid #ececec;
+  border-left: 4px solid #728aac;
+  border-radius: 6px; }
+  #achievements .award-list:last-child {
+    margin-bottom: 0px; }
+  #achievements .award-list li {
+    list-style: none;
+    font-size: 0.9375em;
+    line-height: 1.7em;
+    color: #4e4e4e;
+    margin-bottom: 6px; }
+  #achievements .award-list li:first-child {
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-size: 0.75em;
+    font-weight: 700;
+    color: #98a6b8;
+    margin-bottom: 8px; }
+  #achievements .award-list li:nth-child(2) {
+    font-size: 1.125em;
+    font-weight: 700;
+    line-height: 1.4em;
+    color: #333333; }
+  #achievements .award-list li:nth-child(3) {
+    font-size: 0.875em;
+    color: #747474;
+    margin-bottom: 10px; }
+  #achievements .award-list li:last-child {
+    margin-bottom: 0px; }
+    #achievements .award-list li:last-child a {
+      font-size: 0.875em;
+      font-weight: 700;
+      color: #728aac;
+      text-decoration: none;
+      border-bottom: none; }
+      #achievements .award-list li:last-child a:hover {
+        color: #333333 !important; }
+
+#skills .skill-list {
+  margin-left: 0px;
+  margin-bottom: 0px;
+  padding: 16px 0px;
+  border-bottom: 1px solid #ececec; }
+  #skills .skill-list:last-child {
+    border-bottom: none; }
+  #skills .skill-list li {
+    list-style: none; }
+  #skills .skill-list li:first-child {
+    font-size: 0.9375em;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 4px; }
+  #skills .skill-list li:last-child {
+    font-size: 0.875em;
+    line-height: 1.8em;
+    color: #4e4e4e; }
+
 .award .award-list {
   margin-left: 0px; }
   .award .award-list li:first-child {
